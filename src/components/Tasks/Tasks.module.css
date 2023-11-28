@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.list li {
+  list-style: none;
+}
+
+.info div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.created {
+  color: var(--blue);
+}
+
+.done {
+  color: var(--purple);
+}
+
+.counter {
+  padding: 2px 0.5rem;
+  border-radius: 50px;
+  background-color: var(--gray-400);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--gray-200);
+}

@@ -1,0 +1,52 @@
+.control {
+  display: grid;
+  width: 1.5rem;
+  height: 1.5rem;
+  place-content: center;
+}
+
+.control input {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  margin: 0;
+
+  border: 2px solid var(--blue);
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 50%;
+
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+
+  transition: all 300ms ease-out;
+}
+
+.control input:hover {
+  background-color: rgba(30, 111, 159, 0.2);
+  border-color: var(--blue-dark);
+}
+
+.control input::before {
+  content: "";
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  background: url('../../assets/check.svg'), var(--purple-dark);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+}
+
+.control input:checked::before {
+  visibility: visible;
+  opacity: 1;
+}
+
+.control input:checked:hover::before {
+  background-color: var(--purple);
+}

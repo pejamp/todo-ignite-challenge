@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 
-export const tasks = [
+export const initialTasks = [
   {
     id: uuidv4(),
     title: "Assistir todas as aulas",

@@ -15,6 +15,11 @@
   font-size: 0.875rem;
 }
 
+.textDone {
+  color: var(--gray-300);
+  text-decoration: line-through;
+}
+
 .buttonBox {
   width: 1.5rem;
   height: 1.5rem;

@@ -4,12 +4,12 @@ export const initialTasks = [
   {
     id: uuidv4(),
     title: "Assistir todas as aulas",
-    isDone: false
+    isDone: true
   },
   {
     id: uuidv4(),
     title: "Terminar desafio",
-    isDone: false
+    isDone: true
   },
   {
     id: uuidv4(),
